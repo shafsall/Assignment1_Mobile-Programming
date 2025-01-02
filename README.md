@@ -3,8 +3,8 @@
 Name: Salsabila Shafa Khairunisa
 Matric: 290267
 
-Github Pages:
+Github Pages: <br>
 https://shafsall.github.io/Assignment1_Mobile-Programming/
 
-Link Presentation:
+Link Presentation: <br>
 https://youtu.be/YP8KHYyBtEM
