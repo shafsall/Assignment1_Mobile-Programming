@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Submit Recipe - Flavour of Malaysia</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header class="d-flex justify-content-between align-items-center mt-3">
+            <div class="d-flex align-items-center">
+                <h1 class="mb-0">FM</h1>
+                <h3 class="mb-0">FLAVOUR OF MALAYSIA</h3>
+            </div>
+            <nav>
+                <ul class="nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="recipes.html">Recipes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="aboutUs.html">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="tips.html">Cooking Tips</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="form.html">Submit Recipe</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <section class="mt-4">
+            <h2>Submit Your Recipe</h2>
+            <form>
+                <div class="form-group">
+                    <label for="recipeName">Recipe Name</label>
+                    <input type="text" class="form-control" id="recipeName" placeholder="Enter recipe name" required>
+                </div>
+                <div class="form-group">
+                    <label for="recipeImage">Upload Image</label>
+                    <input type="file" class="form-control-file" id="recipeImage" accept="image/*" required>
+                </div>
+                <div class="form-group">
+                    <label for="description">Description</label>
+                    <textarea class="form-control" id="description" rows="3" placeholder="Enter recipe description" required></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="portions">Portions</label>
+                    <input type="number" class="form-control" id="portions" placeholder="Enter number of portions" required>
+                </div>
+                <div class="form-group row">
+                    <label class="col-sm-12">Preparation Time</label>
+                    <div class="col-sm-6">
+                        <input type="number" class="form-control" id="prepHours" placeholder="Hours" min="0">
+                    </div>
+                    <div class="col-sm-6">
+                        <input type="number" class="form-control" id="prepMinutes" placeholder="Minutes" min="0">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label class="col-sm-12">Cooking Time</label>
+                    <div class="col-sm-6">
+                        <input type="number" class="form-control" id="cookingHours" placeholder="Hours" min="0">
+                    </div>
+                    <div class="col-sm-6">
+                        <input type="number" class="form-control" id="cookingMinutes" placeholder="Minutes" min="0">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="difficulty">Difficulty Level</label><br>
+                    <div style="display: flex; gap: 20px;">
+                        <div>
+                            <input type="radio" id="easy" name="difficulty" value="Easy" required>
+                            <label for="easy">Easy</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="medium" name="difficulty" value="Medium">
+                            <label for="medium">Medium</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="hard" name="difficulty" value="Hard">
+                            <label for="hard">Hard</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label>Dietary Restrictions</label><br>
+                    <div style="display: flex; gap: 20px;">
+                        <div>
+                            <input type="checkbox" id="vegetarian" name="dietaryRestrictions" value="Vegetarian">
+                            <label for="vegetarian">Vegetarian</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="vegan" name="dietaryRestrictions" value="Vegan">
+                            <label for="vegan">Vegan</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="glutenFree" name="dietaryRestrictions" value="Gluten-Free">
+                            <label for="glutenFree">Gluten-Free</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="mealType">Meal Type</label>
+                    <select class="form-control" id="mealType" required>
+                        <option value="" disabled selected>Select meal type</option>
+                        <option>Breakfast</option>
+                        <option>Lunch</option>
+                        <option>Dinner</option>
+                        <option>Snack</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="ingredients">Ingredients</label>
+                    <textarea class="form-control" id="ingredients" rows="3" placeholder="List ingredients here" required></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="steps">Steps</label>
+                    <textarea class="form-control" id="steps" rows="5" placeholder="List preparation steps here" required></textarea>
+                </div>
+                <div class="form-group text-right">
+                    <button type="submit" class="btn btn-maroon">Submit Recipe</button>
+                </div>
+            </form>
+        </section>
+    </div>
+</body>
+</html>
